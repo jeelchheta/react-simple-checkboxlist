@@ -1,0 +1,32 @@
+.container-box {
+  display: inline-block;
+  max-height: inherit;
+  height: inherit;
+  min-height: 20%;
+  max-width: 100%;
+  min-width: 20%;
+  width: inherit;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+}
+
+.control-box {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox-contoller {
+  margin: 15px;
+}
+
+.checkbox-label {
+  word-break: break-all;
+}
+
+.set-over-div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
