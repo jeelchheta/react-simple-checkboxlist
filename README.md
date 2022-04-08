@@ -16,7 +16,7 @@ npm install react-simple-checkboxlist
 ## Usage
 
 ```javascript
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import CheckboxList from 'react-simple-checkboxlist'
 
 const data = [
