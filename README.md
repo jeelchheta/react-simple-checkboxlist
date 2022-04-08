@@ -50,7 +50,7 @@ const Demo = () => {
 ReactDOM.render(<Demo />, document.body)
 ```
 
-# More other api hook
+# More other props
 | Prop              | Description                                                    | Type               | Default           |
 | ----------------- | -------------------------------------------------------------- | ------------------ | ----------------- |
 | `options`         | options for checkbox list                                           | `[{label, value}]` | []                |
