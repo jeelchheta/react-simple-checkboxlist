@@ -1,24 +1,34 @@
 {
   "name": "react-simple-checkboxlist",
-  "version": "1.0.3",
-  "description": "",
-  "main": "checkbox-list.js",
+  "version": "1.0.5",
+  "description": "A simple react checkbox-list component",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeelchheta/react-simple-checkboxlist.git"
   },
   "keywords": [
     "react",
     "react-checkboxlist",
+    "checkbox",
+    "simple",
+    "list",
     "checkbox-list",
     "react-checkbox-list",
     "simple-checkbox-list",
     "simple-checkboxlist",
     "checkboxlist",
-    "checkboxlist-component",
-    "checkbox-list-component"
+    "checkboxlist-component"
   ],
-  "author": "jptechinsight",
-  "license": "ISC",
+  "author": "jp techinsight",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeelchheta/react-simple-checkboxlist/issues"
+  },
+  "homepage": "https://github.com/jeelchheta/react-simple-checkboxlist#readme",
   "peerDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",

@@ -1,6 +1,6 @@
 # react-simple-checkboxlist
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/jakezatecky/react-checkbox-tree/master/LICENSE.txt)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/jeelchheta/react-simple-checkboxlist/blob/main/LICENSE)
 
 A bootstrap-style react component for checkbox list
 
@@ -16,7 +16,7 @@ npm install react-simple-checkboxlist
 ## Usage
 
 ```javascript
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import CheckboxList from 'react-simple-checkboxlist'
 
 const data = [
@@ -50,7 +50,7 @@ const Demo = () => {
 ReactDOM.render(<Demo />, document.body)
 ```
 
-# More other api hook
+# list of props
 | Prop              | Description                                                    | Type               | Default           |
 | ----------------- | -------------------------------------------------------------- | ------------------ | ----------------- |
 | `options`         | options for checkbox list                                           | `[{label, value}]` | []                |
