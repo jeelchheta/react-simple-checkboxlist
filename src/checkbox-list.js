@@ -1,5 +1,5 @@
 import React from "react"
-import './checkbox-list.css'
+import '../style/checkbox-list.css'
 
 export default class CheckboxList extends React.Component {
 
@@ -22,16 +22,15 @@ export default class CheckboxList extends React.Component {
         }
 
     }
-
     render() {
-        let { option,
+        let { options,
             selectoption,
             optionlabel,
             optionvalue,
             controlboxClass,
             containerClass
         } = this.props
-        let checkboxList = option || []
+        let checkboxList = options || []
         let selectedList = selectoption || []
         let selectedListLength = selectedList.length
         let key = optionvalue || "value"
@@ -47,9 +46,9 @@ export default class CheckboxList extends React.Component {
                 }
                 return React.createElement('div',
                     { key: e.value + i, className: `control-box ${controlboxClass ? controlboxClass : ""}`, onClick: () => this.handelSet(e, index, index !== -1) },
-                    React.createElement('input', {className:"checkbox-contoller", type:"checkbox" ,checked:index !== -1, readOnly:true}),
-                    React.createElement('div', {className:"set-over-div"}),
-                    React.createElement('div', {className:"checkbox-label"},e[label])
+                    React.createElement('input', { className: "checkbox-contoller", type: "checkbox", checked: index !== -1, readOnly: true }),
+                    React.createElement('div', { className: "set-over-div" }),
+                    React.createElement('div', { className: "checkbox-label" }, e[label])
                 )
             }
             )
