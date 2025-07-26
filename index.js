@@ -1,3 +1,3 @@
-import CheckboxList from './src/checkbox-list'
+import CheckboxList from './src/index'
 
 export default CheckboxList

@@ -40,9 +40,12 @@ const Demo = () => {
 
   return (
    <CheckboxList 
-     options={setFruits}
-     selectoption={selectedfruits}
-     handelchange={handelSelection} 
+    options={fruits}
+    selectoption={selectedfruits}
+    handlechange={handelSelection}
+    optionlabel={row => row.label}
+    optionvalue={row => row.value}
+    filterHidden={true}
    />
   )
 }
@@ -55,11 +58,17 @@ ReactDOM.render(<Demo />, document.body)
 | ----------------- | -------------------------------------------------------------- | ------------------ | ----------------- |
 | `options`         | options for checkbox list                                           | `[{label, value}]` | []                |
 | `selectoption`    | pre-selected option                                            | `[{label, value}]` | []                |
-| `handelchange`    | onChange callback   e.g (selectedList, object, expresion)=>{ } | function           |                   |
-| `optionlabel`     | display your own label                                         | String             | 'label'           |
-| `optionvalue`     | display your own value                                         | String             | 'value'           |
-| `containerClass` | class name for parent component                                | String             | 'container-box'   |
-| `controlboxClass`     | class name for list item component                             | String             | 'control-box' |
+| `handlechange`    | onChange callback   e.g (selectedList, object, expresion)=>{ } | function           |                   |
+| `optionlabel`     | display your own label                                         | function             | 'label'           |
+| `optionvalue`     | display your own value                                         | function             | 'value'           |
+| `controlboxClass` | class name for parent component                                | String             | '-'   |
+| `containerClass`     | class name for list component                             | String             | 'container-checkbox' |
+| `inputsearchClass`     | class name for search input component                             | String             | 'search' |
+| `checkboxColor`     | color for checkbox                             | String             | '#506EEC' |
+| `filter`     | enabled to search search box                            | Bool             | 'true' |
+| `filterhidden`     | enabled to search all object key or only deisplay label                            | Bool             | 'false' |
+| `placeholder`     | search box place holder                            | String             | 'Search...' |
+| `filterdigit`     | searching start after enter number of digits                            | Number             | 2 |
 
 
 ## License
